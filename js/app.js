@@ -14,7 +14,7 @@ let yourName=prompt('what is your name?');
         alert('Your name and age are written this way in the German language, Mein Name ist '   + yourName+ '  Ich bin '+ age +' Jahre alt');
 
 
-        let book=prompt('What do you want to read fields of environment or economy?');
+        /*let book=prompt('What do you want to read fields of environment or economy?');
 
         console.log(book);
         
@@ -106,7 +106,98 @@ switch (A.toUpperCase()) {
         console.log('You should select one of them');
         alert('You should select one of them');
         break;
+}*/
+
+let book=prompt('Do you like books? (yes/no)')
+
+book=book.toLocaleLowerCase();
+if (book==='yes') {
+    //console.log('Good Choice');
+    alert('Good Choice');
+    
+}else if(book==='no'){
+    //console.log('You need a second chance');
+    alert('You need a second chance');
+
+}else{
+    //console.log('Does not exist');
+    alert('Your answer not exist');
 }
+
+let SMP=prompt("Do you like twitter?(YES/NO)")
+SMP=SMP.toUpperCase();
+
+if (SMP==='YES') {
+    //console.log('The most reliable Socialmedia platform');
+    alert('The most reliable Socialmedia platform');
+    
+}else if(SMP==='NO'){
+    //console.log('Try the latest update');
+    alert('Try the latest update');
+
+}else{
+    //console.log('Does not exist');
+    alert('You should select(YES/NO)');
+}
+
+let music=prompt('Do you like music?(y/n)');
+
+switch (music=music.toLowerCase()) {
+    case 'y':
+        //console.log('Calms nerves');
+        alert('Calms nerves')
+    
+        break;
+    case 'n':
+    //console.log('Try to hear it');
+    alert('Try to hear it');
+        break;
+
+    default:
+        console.log('Please check the major entry next time');
+           alert('Please check the major entry next time');
+        break;
+}
+
+let party=prompt('Is the Conservative Party is the ruling party in Britain?(Y/N)');
+switch (party=party.toUpperCase()) {
+    case 'Y':
+        //console.log('It is the correct answer');
+        alert('It is the correct answer');
+    
+        break;
+
+        case 'N':
+            //console.log('It/s the wrong answer');
+            alert('It Is the wrong answer');
+        break;
+
+    default:
+        //cosole.log(' It is not the labour Party');
+        alert(' It is not the labour Party');
+        break;
+}
+
+let UNI=prompt('Is MIT University the best technical university in the world?(yes/no)');
+ UNI=UNI.toLocaleLowerCase();
+
+if (UNI==='yes') {
+//console.log('Depending on the latest answer classification is correct');
+alert('Depending on the latest answer classification is correct');    
+}else if(UNI==='no'){
+//console.log('Depending on the latest answer classification is wrong');
+alert('Depending on the latest answer classification is wrong');
+
+}
+
+else {
+    //console.log('Review your information');
+    alert('Review your information');
+
+    
+}
+
+
 
     
 
