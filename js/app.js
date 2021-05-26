@@ -160,26 +160,30 @@ function q2(){
 }
 q2();
 
-let music = prompt('Do you like music?(y/n)');
+function q3 (){
+  let music = prompt('Do you like music?(y/n)');
 
-switch (music = music.toLowerCase()) {
-case 'y':
-case 'yes':
-  //console.log('Calms nerves');
-  alert('Calms nerves');
-  Grade++;
-  break;
-case 'no':
-case 'n':
-  //console.log('Try to hear it');
-  alert('Try to hear it');
-  break;
+  switch (music = music.toLowerCase()) {
+  case 'y':
+  case 'yes':
+    //console.log('Calms nerves');
+    alert('Calms nerves');
+    Grade++;
+    break;
+  case 'no':
+  case 'n':
+    //console.log('Try to hear it');
+    alert('Try to hear it');
+    break;
 
-default:
-  console.log('Please check the major entry next time');
-  alert('Please check the major entry next time');
-  break;
+  default:
+    console.log('Please check the major entry next time');
+    alert('Please check the major entry next time');
+    break;
+  }
 }
+q3 ();
+
 
 let party = prompt('Is the Conservative Party is the ruling party in Britain?(Y/N)');
 switch (party = party.toUpperCase()) {
