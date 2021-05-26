@@ -234,47 +234,50 @@ q5();
 
 
 //let READ = prompt('How excited is I reading Obamas diary? ');
-let YG;
-YG = 7;
-let gr='';
+function q6 (){
+  let YG;
+  YG = 7;
+  let gr='';
 
-for (let i = 0; i < 4; i++) {
-  gr = Number(prompt('How excited is I reading Obamas diary? '));
+  for (let i = 0; i < 4; i++) {
+    gr = Number(prompt('How excited is I reading Obamas diary? '));
 
-  if (gr=== YG) {
-    console.log('Your answer is correect');
-    alert('Your answer is correect');
-    Grade++;
-    break;
-  } else if (gr < YG) {
+    if (gr=== YG) {
+      console.log('Your answer is correect');
+      alert('Your answer is correect');
+      Grade++;
+      break;
+    } else if (gr < YG) {
 
-    //console.log('Your answer is wrong, it is more than that');
-    alert('Your answer is wrong, it is more than that ');
+      //console.log('Your answer is wrong, it is more than that');
+      alert('Your answer is wrong, it is more than that ');
+      //let READ = prompt('How excited is I reading Obamas diary? ');
+
+    } else if (gr > YG) {
+
+      //console.log('Your answer is wrong, it is less than that');
+      alert('Your answer is wrong, it is less than that ');
+      //let READ = prompt('How excited is I reading Obamas diary? ');
+
+    } else if (gr === 6 || gr === 8) {
+
+      console.log('Your answer is wrong,but you are close correct answer');
+      alert('Your answer is wrong, but you are close correct answer ');
     //let READ = prompt('How excited is I reading Obamas diary? ');
+    } else {
 
-  } else if (gr > YG) {
+      alert('plz enter only from 1-10');
+      //let READ = prompt('How excited is I reading Obamas diary? ');
 
-    //console.log('Your answer is wrong, it is less than that');
-    alert('Your answer is wrong, it is less than that ');
-    //let READ = prompt('How excited is I reading Obamas diary? ');
+    }
+    if (i===3){
+      alert('The corect answer is 7');
+    }
 
-  } else if (gr === 6 || gr === 8) {
-
-    console.log('Your answer is wrong,but you are close correct answer');
-    alert('Your answer is wrong, but you are close correct answer ');
-    //let READ = prompt('How excited is I reading Obamas diary? ');
-  } else {
-
-    alert('plz enter only from 1-10');
-    //let READ = prompt('How excited is I reading Obamas diary? ');
-
-  }
-  if (i===3){
-    alert('The corect answer is 7');
   }
 
 }
-
+q6();
 
 
 
