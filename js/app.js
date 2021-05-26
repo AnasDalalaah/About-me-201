@@ -115,26 +115,28 @@ let Grade;
 
 Grade = 0;
 
+function q1 (){
+  let book = prompt('Do you like books? (yes/no)');
 
-let book = prompt('Do you like books? (yes/no)');
+  book = book.toLocaleLowerCase();
 
-book = book.toLocaleLowerCase();
+  if (book === 'yes' || book === 'y') {
+    //console.log('Good Choice');
+    alert('Good Choice');
 
-if (book === 'yes' || book === 'y') {
-  //console.log('Good Choice');
-  alert('Good Choice');
+    Grade++;
 
-  Grade++;
+  } else if (book === 'no' || book === 'n') {
+    //console.log('You need a second chance');
+    alert('You need a second chance');
 
-} else if (book === 'no' || book === 'n') {
-  //console.log('You need a second chance');
-  alert('You need a second chance');
-
-} else {
-  //console.log('Does not exist');
-  alert('Your answer not exist');
+  } else {
+    //console.log('Does not exist');
+    alert('Your answer not exist');
+  }
 }
 
+// Q2
 let SMP = prompt('Do you like twitter?(YES/NO)');
 
 SMP = SMP.toUpperCase();
@@ -298,9 +300,9 @@ while (itriation){
 
 
   }
-    
 
-    
+
+
 
 
 
