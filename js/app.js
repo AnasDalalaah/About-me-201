@@ -1,4 +1,8 @@
+/* eslint-disable no-unused-vars */
 'use strict';
+
+
+
 
 const GA = 'Guten Abend';
 
@@ -12,7 +16,6 @@ let age = prompt('what is your age?');
 console.log(age);
 
 alert('Your name and age are written this way in the German language, Mein Name ist ' + yourName + '  Ich bin ' + age + ' Jahre alt');
-
 
 /*let book=prompt('What do you want to read fields of environment or economy?');
 
@@ -108,15 +111,22 @@ alert('You should select one of them');
 break;
 }*/
 
+let Grade;
+
+Grade = 0;
+
+
 let book = prompt('Do you like books? (yes/no)');
 
 book = book.toLocaleLowerCase();
 
-if (book === 'yes' || book==='y' ) {
+if (book === 'yes' || book === 'y') {
   //console.log('Good Choice');
   alert('Good Choice');
 
-} else if (book === 'no'|| book==='n') {
+  Grade++;
+
+} else if (book === 'no' || book === 'n') {
   //console.log('You need a second chance');
   alert('You need a second chance');
 
@@ -129,11 +139,13 @@ let SMP = prompt('Do you like twitter?(YES/NO)');
 
 SMP = SMP.toUpperCase();
 
-if (SMP === 'YES'||SMP==='Y') {
+if (SMP === 'YES' || SMP === 'Y') {
   //console.log('The most reliable Socialmedia platform');
   alert('The most reliable Socialmedia platform');
 
-} else if (SMP === 'NO'||SMP==='N') {
+  Grade++;
+
+} else if (SMP === 'NO' || SMP === 'N') {
   //console.log('Try the latest update');
   alert('Try the latest update');
 
@@ -149,10 +161,10 @@ case 'y':
 case 'yes':
   //console.log('Calms nerves');
   alert('Calms nerves');
-
+  Grade++;
   break;
 case 'no':
-case 'n' :
+case 'n':
   //console.log('Try to hear it');
   alert('Try to hear it');
   break;
@@ -169,7 +181,7 @@ case 'Y':
 case 'YES':
   //console.log('It is the correct answer');
   alert('It is the correct answer');
-
+  Grade++;
   break;
 
 case 'N':
@@ -187,10 +199,11 @@ default:
 let UNI = prompt('Is MIT University the best technical university in the world?(yes/no)');
 UNI = UNI.toLowerCase();
 
-if (UNI === 'yes' || UNI==='y') {
+if (UNI === 'yes' || UNI === 'y') {
   //console.log('Depending on the latest answer classification is correct');
   alert('Depending on the latest answer classification is correct');
-} else if (UNI === 'no'|| UNI==='n') {
+  Grade++;
+} else if (UNI === 'no' || UNI === 'n') {
   //console.log('Depending on the latest answer classification is wrong');
   alert('Depending on the latest answer classification is wrong');
 
@@ -202,6 +215,76 @@ else {
 
 
 }
+
+let READ = prompt('How excited is I reading Obamas diary? ');
+let YG;
+YG = 7;
+for (let i = 0; i <= 4; i++) {
+  if (READ === YG) {
+    console.log('Your answer is correect');
+    alert('Your answer is correect');
+    Grade++;
+    break;
+  } else if (READ < YG) {
+
+    //console.log('Your answer is wrong, it is more than that');
+    alert('Your answer is wrong, it is more than that ');
+    let READ = prompt('How excited is I reading Obamas diary? ');
+
+  } else if (READ > YG) {
+
+    //console.log('Your answer is wrong, it is less than that');
+    alert('Your answer is wrong, it is less than that ');
+    let READ = prompt('How excited is I reading Obamas diary? ');
+
+  } /*else if (READ === 6 || READ === 8) {
+
+    console.log('Your answer is wrong,but you are close correct answer');
+    alert('Your answer is wrong, but you are close correct answer ');
+    let READ = prompt('How excited is I reading Obamas diary? ');
+  } */else {
+
+    alert('plz enter only from 1-10');
+    //let READ = prompt('How excited is I reading Obamas diary? ');
+
+  }
+
+}
+
+let ASP=['JINKO','CANNADIAN','LONGI','TRINA','PHILADELPHIA','QCELL'];
+let bestSB=prompt('What is my fav solar panel?');
+
+bestSB=bestSB.toUpperCase();
+
+//alert(bestSB);
+console.log(bestSB);
+
+let note;
+note=false;
+
+for (let i = 0; i <=6; i++) {
+
+  for (let j = 0; j <bestSB ; j++) {
+
+    if (ASP[j]===bestSB) {
+
+      alert(`Great answer, ${ASP[j]} is my best solar panel`);
+      console.log(`Great answer, ${ASP[j]} is my best solar panel`);
+      note=true;
+      Grade++;
+
+    }else{
+      let bestSB=prompt('Try agin & read more about solar panels');
+
+    }
+
+  }
+
+}
+
+
+
+alert(`your grade is ${Grade}`);
 
 
 
