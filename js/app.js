@@ -216,69 +216,93 @@ else {
 
 }
 
-let READ = prompt('How excited is I reading Obamas diary? ');
+//let READ = prompt('How excited is I reading Obamas diary? ');
 let YG;
 YG = 7;
-for (let i = 0; i <= 4; i++) {
-  if (READ === YG) {
+let gr='';
+
+for (let i = 0; i < 4; i++) {
+  gr = Number(prompt('How excited is I reading Obamas diary? '));
+
+  if (gr=== YG) {
     console.log('Your answer is correect');
     alert('Your answer is correect');
     Grade++;
     break;
-  } else if (READ < YG) {
+  } else if (gr < YG) {
 
     //console.log('Your answer is wrong, it is more than that');
     alert('Your answer is wrong, it is more than that ');
-    let READ = prompt('How excited is I reading Obamas diary? ');
+    //let READ = prompt('How excited is I reading Obamas diary? ');
 
-  } else if (READ > YG) {
+  } else if (gr > YG) {
 
     //console.log('Your answer is wrong, it is less than that');
     alert('Your answer is wrong, it is less than that ');
-    let READ = prompt('How excited is I reading Obamas diary? ');
+    //let READ = prompt('How excited is I reading Obamas diary? ');
 
-  } /*else if (READ === 6 || READ === 8) {
+  } else if (gr === 6 || gr === 8) {
 
     console.log('Your answer is wrong,but you are close correct answer');
     alert('Your answer is wrong, but you are close correct answer ');
-    let READ = prompt('How excited is I reading Obamas diary? ');
-  } */else {
+    //let READ = prompt('How excited is I reading Obamas diary? ');
+  } else {
 
     alert('plz enter only from 1-10');
     //let READ = prompt('How excited is I reading Obamas diary? ');
 
   }
+  if (i===3){
+    alert('The corect answer is 7');
+  }
 
 }
 
-let ASP=['JINKO','CANNADIAN','LONGI','TRINA','PHILADELPHIA','QCELL'];
-let bestSB=prompt('What is my fav solar panel?');
 
-bestSB=bestSB.toUpperCase();
 
-//alert(bestSB);
-console.log(bestSB);
+
 
 let note;
 note=false;
+let ASP=['JINKO','CANNADIAN','LONGI','TRINA','PHILADELPHIA','QCELL'];
+//let bestSB=prompt('What is my fav solar panel?');
 
-for (let i = 0; i <=6; i++) {
+let itriation=6;
 
-  for (let j = 0; j <bestSB ; j++) {
+while (itriation){
+  note=prompt('What is my fav solar panel?');
+  itriation-=1;
 
-    if (ASP[j]===bestSB) {
 
-      alert(`Great answer, ${ASP[j]} is my best solar panel`);
-      console.log(`Great answer, ${ASP[j]} is my best solar panel`);
-      note=true;
+  for (let i = 0; i <ASP.length; i++) {
+
+    console.log(ASP[i]);
+
+    if (note===ASP[i]) {
+
+      alert(`Great answer, ${ASP[i]} is my best solar panel`);
+      console.log(`Great answer, ${ASP[i]} is my best solar panel`);
+
       Grade++;
 
-    }else{
-      let bestSB=prompt('Try agin & read more about solar panels');
+      break;
 
     }
+  } if(itriation<6){
+    alert('Try agin & read more about solar panels');
+
+
+  }if(!itriation){
+
+    alert(' here are The truth answers'+ASP);
+
 
   }
+    
+
+    
+
+
 
 }
 
