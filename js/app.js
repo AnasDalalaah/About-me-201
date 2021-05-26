@@ -135,26 +135,30 @@ function q1 (){
     alert('Your answer not exist');
   }
 }
+q1();
 
 // Q2
-let SMP = prompt('Do you like twitter?(YES/NO)');
+function q2(){
+  let SMP = prompt('Do you like twitter?(YES/NO)');
 
-SMP = SMP.toUpperCase();
+  SMP = SMP.toUpperCase();
 
-if (SMP === 'YES' || SMP === 'Y') {
-  //console.log('The most reliable Socialmedia platform');
-  alert('The most reliable Socialmedia platform');
+  if (SMP === 'YES' || SMP === 'Y') {
+    //console.log('The most reliable Socialmedia platform');
+    alert('The most reliable Socialmedia platform');
 
-  Grade++;
+    Grade++;
 
-} else if (SMP === 'NO' || SMP === 'N') {
-  //console.log('Try the latest update');
-  alert('Try the latest update');
+  } else if (SMP === 'NO' || SMP === 'N') {
+    //console.log('Try the latest update');
+    alert('Try the latest update');
 
-} else {
-  //console.log('Does not exist');
-  alert('You should select(YES/NO)');
+  } else {
+    //console.log('Does not exist');
+    alert('You should select(YES/NO)');
+  }
 }
+q2();
 
 let music = prompt('Do you like music?(y/n)');
 
