@@ -3,7 +3,9 @@
 ## About-me-201:
 
 
-### *Author:*  Anas F. Dalala'h/Amman-201d26.
+Anas Dalalah is Navigator
+
+Jamal Eldeen Wari is Driver
 
 ### Links & Resources:
 
