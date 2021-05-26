@@ -184,27 +184,30 @@ function q3 (){
 }
 q3 ();
 
+function q4(){
+  let party = prompt('Is the Conservative Party is the ruling party in Britain?(Y/N)');
+  switch (party = party.toUpperCase()) {
+  case 'Y':
+  case 'YES':
+    //console.log('It is the correct answer');
+    alert('It is the correct answer');
+    Grade++;
+    break;
 
-let party = prompt('Is the Conservative Party is the ruling party in Britain?(Y/N)');
-switch (party = party.toUpperCase()) {
-case 'Y':
-case 'YES':
-  //console.log('It is the correct answer');
-  alert('It is the correct answer');
-  Grade++;
-  break;
+  case 'N':
+  case 'NO':
+    //console.log('It/s the wrong answer');
+    alert('It Is the wrong answer');
+    break;
 
-case 'N':
-case 'NO':
-  //console.log('It/s the wrong answer');
-  alert('It Is the wrong answer');
-  break;
-
-default:
-  //cosole.log(' It is not the labour Party');
-  alert(' It is not the labour Party');
-  break;
+  default:
+    //cosole.log(' It is not the labour Party');
+    alert(' It is not the labour Party');
+    break;
+  }
 }
+q4();
+
 
 let UNI = prompt('Is MIT University the best technical university in the world?(yes/no)');
 UNI = UNI.toLowerCase();
