@@ -208,26 +208,30 @@ function q4(){
 }
 q4();
 
+function q5(){
+  let UNI = prompt('Is MIT University the best technical university in the world?(yes/no)');
+  UNI = UNI.toLowerCase();
 
-let UNI = prompt('Is MIT University the best technical university in the world?(yes/no)');
-UNI = UNI.toLowerCase();
-
-if (UNI === 'yes' || UNI === 'y') {
+  if (UNI === 'yes' || UNI === 'y') {
   //console.log('Depending on the latest answer classification is correct');
-  alert('Depending on the latest answer classification is correct');
-  Grade++;
-} else if (UNI === 'no' || UNI === 'n') {
+    alert('Depending on the latest answer classification is correct');
+    Grade++;
+  } else if (UNI === 'no' || UNI === 'n') {
   //console.log('Depending on the latest answer classification is wrong');
-  alert('Depending on the latest answer classification is wrong');
+    alert('Depending on the latest answer classification is wrong');
 
-}
+  }
 
-else {
+  else {
   //console.log('Review your information');
-  alert('Review your information');
+    alert('Review your information');
 
 
+  }
 }
+q5();
+
+
 
 //let READ = prompt('How excited is I reading Obamas diary? ');
 let YG;
