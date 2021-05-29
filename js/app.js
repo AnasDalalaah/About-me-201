@@ -234,36 +234,25 @@ q5();
 
 
 //let READ = prompt('How excited is I reading Obamas diary? ');
-<<<<<<< HEAD
+
 let YG;
 YG = 7;
 let gr = '';
-=======
-function q6 (){
-  let YG;
-  YG = 7;
-  let gr='';
->>>>>>> 8d088deff82e8211f3e346a5ab74df3cab37c3a3
+
+function q6 ()
+{
 
   for (let i = 0; i < 4; i++) {
+
+
     gr = Number(prompt('How excited is I reading Obamas diary? '));
 
-<<<<<<< HEAD
-  if (gr === YG) {
-    console.log('Your answer is correect');
-    alert('Your answer is correect');
-    Grade++;
-    break;
-  } else if (gr < YG) {
-=======
-    if (gr=== YG) {
+    if (gr === YG) {
       console.log('Your answer is correect');
       alert('Your answer is correect');
       Grade++;
       break;
     } else if (gr < YG) {
->>>>>>> 8d088deff82e8211f3e346a5ab74df3cab37c3a3
-
       //console.log('Your answer is wrong, it is more than that');
       alert('Your answer is wrong, it is more than that ');
       //let READ = prompt('How excited is I reading Obamas diary? ');
@@ -274,12 +263,14 @@ function q6 (){
       alert('Your answer is wrong, it is less than that ');
       //let READ = prompt('How excited is I reading Obamas diary? ');
 
-    } else if (gr === 6 || gr === 8) {
+    }
+    else if (gr === 6 || gr === 8) {
 
       console.log('Your answer is wrong,but you are close correct answer');
       alert('Your answer is wrong, but you are close correct answer ');
     //let READ = prompt('How excited is I reading Obamas diary? ');
-    } else {
+    }
+    else {
 
       alert('plz enter only from 1-10');
       //let READ = prompt('How excited is I reading Obamas diary? ');
@@ -288,15 +279,7 @@ function q6 (){
     if (i===3){
       alert('The corect answer is 7');
     }
-
-<<<<<<< HEAD
   }
-  if (i === 3) {
-    alert('The corect answer is 7');
-=======
->>>>>>> 8d088deff82e8211f3e346a5ab74df3cab37c3a3
-  }
-
 }
 q6();
 
@@ -310,77 +293,39 @@ function q7(){
 
   let itriation=6;
 
-<<<<<<< HEAD
-let note;
-note = false;
-let ASP = ['JINKO', 'CANNADIAN', 'LONGI', 'TRINA', 'PHILADELPHIA', 'QCELL'];
-//let bestSB=prompt('What is my fav solar panel?');
+  //let bestSB=prompt('What is my fav solar panel?')
 
-let itriation = 6;
+  while (itriation) {
+    note = prompt('What is my fav solar panel?');
+    itriation -= 1;
+    for (let i = 0; i < ASP.length; i++) {
 
-while (itriation) {
-  note = prompt('What is my fav solar panel?');
-  itriation -= 1;
-=======
-  while (itriation){
-    note=prompt('What is my fav solar panel?');
-    itriation-=1;
-
-
-    for (let i = 0; i <ASP.length; i++) {
->>>>>>> 8d088deff82e8211f3e346a5ab74df3cab37c3a3
-
-      console.log(ASP[i]);
-
-<<<<<<< HEAD
-  for (let i = 0; i < ASP.length; i++) {
-=======
       if (note===ASP[i]) {
->>>>>>> 8d088deff82e8211f3e346a5ab74df3cab37c3a3
+
 
         alert(`Great answer, ${ASP[i]} is my best solar panel`);
         console.log(`Great answer, ${ASP[i]} is my best solar panel`);
-
-<<<<<<< HEAD
-    if (note === ASP[i]) {
-=======
         Grade++;
->>>>>>> 8d088deff82e8211f3e346a5ab74df3cab37c3a3
 
         break;
 
+
       }
-    } if(itriation<6){
-      alert('Try agin & read more about solar panels');
+      if(itriation<6){
+        alert('Try agin & read more about solar panels');
 
+      }
 
-<<<<<<< HEAD
-    }
-  } if (itriation < 6) {
-    alert('Try agin & read more about solar panels');
-=======
-    }if(!itriation){
->>>>>>> 8d088deff82e8211f3e346a5ab74df3cab37c3a3
+      if(!itriation){
 
-      alert(' here are The truth answers'+ASP);
+        alert(' here are The truth answers'+ASP);
 
-<<<<<<< HEAD
-  } if (!itriation) {
+      }
 
-    alert(' here are The truth answers' + ASP);
-
-
-  }
-
-
-
-=======
 
     }
 
 
-
->>>>>>> 8d088deff82e8211f3e346a5ab74df3cab37c3a3
 
 
 
@@ -388,12 +333,4 @@ while (itriation) {
 }
 q7();
 
-
-
-
 alert(`your grade is ${Grade}`);
-
-
-
-
-
