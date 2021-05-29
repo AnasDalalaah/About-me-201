@@ -219,12 +219,12 @@ else {
 //let READ = prompt('How excited is I reading Obamas diary? ');
 let YG;
 YG = 7;
-let gr='';
+let gr = '';
 
 for (let i = 0; i < 4; i++) {
   gr = Number(prompt('How excited is I reading Obamas diary? '));
 
-  if (gr=== YG) {
+  if (gr === YG) {
     console.log('Your answer is correect');
     alert('Your answer is correect');
     Grade++;
@@ -252,7 +252,7 @@ for (let i = 0; i < 4; i++) {
     //let READ = prompt('How excited is I reading Obamas diary? ');
 
   }
-  if (i===3){
+  if (i === 3) {
     alert('The corect answer is 7');
   }
 
@@ -263,22 +263,22 @@ for (let i = 0; i < 4; i++) {
 
 
 let note;
-note=false;
-let ASP=['JINKO','CANNADIAN','LONGI','TRINA','PHILADELPHIA','QCELL'];
+note = false;
+let ASP = ['JINKO', 'CANNADIAN', 'LONGI', 'TRINA', 'PHILADELPHIA', 'QCELL'];
 //let bestSB=prompt('What is my fav solar panel?');
 
-let itriation=6;
+let itriation = 6;
 
-while (itriation){
-  note=prompt('What is my fav solar panel?');
-  itriation-=1;
+while (itriation) {
+  note = prompt('What is my fav solar panel?');
+  itriation -= 1;
 
 
-  for (let i = 0; i <ASP.length; i++) {
+  for (let i = 0; i < ASP.length; i++) {
 
     console.log(ASP[i]);
 
-    if (note===ASP[i]) {
+    if (note === ASP[i]) {
 
       alert(`Great answer, ${ASP[i]} is my best solar panel`);
       console.log(`Great answer, ${ASP[i]} is my best solar panel`);
@@ -288,19 +288,19 @@ while (itriation){
       break;
 
     }
-  } if(itriation<6){
+  } if (itriation < 6) {
     alert('Try agin & read more about solar panels');
 
 
-  }if(!itriation){
+  } if (!itriation) {
 
-    alert(' here are The truth answers'+ASP);
+    alert(' here are The truth answers' + ASP);
 
 
   }
-    
 
-    
+
+
 
 
 

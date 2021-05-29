@@ -1,0 +1,103 @@
+
+
+body{
+    background-image:url(https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+
+header h1{
+        text-align: center;
+        font-style: normal;
+        color: wheat;
+    height: 120px;
+
+    float: Center;
+    margin-left: 35px;
+    margin-bottom: 6%;
+    margin-top: 6%;
+    
+    }
+
+    #A{
+        text-align: center;
+        color: yellowgreen;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 35px;
+    margin-bottom: 50px;
+    margin-top: 6%;
+    }
+
+    .B{
+        text-align: center;
+        font-style: italic;
+        margin-left: 35px;
+    margin-bottom: 50px;
+    margin-top: 6%;
+    font-weight:800;
+
+    }
+
+    ul{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(25, 223, 190);
+        margin-left: 40px;
+        margin-bottom:  80px;
+
+
+    }
+
+    .C{
+        text-align: center;
+        font-family:sans-serif;
+        color: rgb(136, 23, 70);
+        margin-left: 40px;
+        margin-bottom:  75px;
+    margin-top: 70px;
+    font-style: oblique;
+    font-weight:900;
+
+
+    }
+
+    #D{
+        text-align:left;
+        font-style: italic;
+        font-weight: bold;
+        color: rgb(136, 23, 70);
+        margin-left: 140px;
+        margin-bottom:  95px;
+    margin-top: 88px;
+
+    }
+
+    ol{
+        text-align:left;
+        font-style:inherit;
+        font-weight: bold;
+        color: rgb(136, 23, 70);
+        margin-left: 140px;
+        margin-bottom:  98 px;
+    margin-top: 86px;
+
+
+
+    }
+
+    .E{
+
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(13, 15, 167);
+        margin-left: 85px;
+        margin-bottom:  110px;
+        margin-top: 100;
+
+
+    }
+
+
+
+
+
+
